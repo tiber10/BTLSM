@@ -23,7 +23,6 @@ A deep learning framework for EEG classification that leverages manifold-aware t
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/tiber10/BTLSM.git
    cd BTLSM
 2. **Set Up a Virtual Environment (Recommended):**
    ```bash
