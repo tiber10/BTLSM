@@ -17,26 +17,17 @@ A deep learning framework for EEG classification that leverages manifold-aware t
   - Separated modules for data handling, model definitions, and training routines.
   - Utility functions for manifold-specific linear algebra operations.
 
-## Directory Structure
 
-Below is the directory tree structure for the project:
+## Installation
 
+1. **Clone the Repository:**
 
-flowchart TD
-    A[eeg_spdnet_project] --> B[data]
-    A --> C[models]
-    A --> D[utils]
-    A --> E[train.py]
-    A --> F[requirements.txt]
+   ```bash
+   git clone https://github.com/yourusername/basis_transformation_layer_on_spd_and_stiefel_manifolds.git
+   cd basis_transformation_layer_on_spd_and_stiefel_manifolds
+2. **Set Up a Virtual Environment (Recommended):**
+   python -m venv venv
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-    B --> B1[__init__.py]
-    B --> B2[dataset.py]
-    B --> B3[preprocessing.py]
-
-    C --> C1[__init__.py]
-    C --> C2[stiefel.py]
-    C --> C3[spdnet.py]
-
-    D --> D1[__init__.py]
-    D --> D2[math_ops.py]
-
+4. **Install Dependencies:**
+   pip install -r requirements.txt
