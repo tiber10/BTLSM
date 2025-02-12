@@ -23,11 +23,13 @@ A deep learning framework for EEG classification that leverages manifold-aware t
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/basis_transformation_layer_on_spd_and_stiefel_manifolds.git
-   cd basis_transformation_layer_on_spd_and_stiefel_manifolds
+   git clone https://github.com/tiber10/BTLSM.git
+   cd BTLSM
 2. **Set Up a Virtual Environment (Recommended):**
+   ```bash
    python -m venv venv
    source venv/bin/activate   # On Windows: venv\Scripts\activate
 
 4. **Install Dependencies:**
+   ```bash
    pip install -r requirements.txt
