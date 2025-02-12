@@ -4,19 +4,35 @@ A deep learning framework for EEG classification that leverages manifold-aware t
 
 ## Features
 
-- **Manifold-Aware Layers**  
-  - **Basis Transformation Layer:** Applies an orthonormal matrix (from the Stiefel manifold) to SPD matrices.  
-  - **Log-Euclidean Mapping:** Projects SPD matrices onto their tangent space at the identity.  
-  - **MixOptimizer:** A custom optimizer that reprojects updates to the Stiefel manifold.
+- **Manifold-Aware Layers**
+  - **Basis Transformation Layer:** Applies an orthonormal matrix (from the Stiefel manifold) to SPD matrices.
+  - **Log-Euclidean Mapping:** Projects SPD matrices onto their tangent space at the identity.
+  - **MixOptimizer:** A custom optimizer that reprojects updates to the Stiefel manifold after each gradient step.
 
-- **EEG Data Preprocessing**  
-  - Data loading, segmentation, band-pass filtering, and mean removal.  
+- **EEG Data Preprocessing**
+  - Data loading, segmentation, band-pass filtering, and mean removal.
   - Covariance matrix computation with regularization to ensure SPD properties.
 
-- **Clean & Modular Codebase**  
-  - Clearly separated modules for data handling, model definitions, and training routines.  
+- **Clean & Modular Codebase**
+  - Separated modules for data handling, model definitions, and training routines.
   - Utility functions for manifold-specific linear algebra operations.
 
 ## Directory Structure
 
-eeg_spdnet_project/ ├── data │   ├── init.py │   ├── dataset.py # Custom PyTorch Dataset for covariance matrices │   └── preprocessing.py # Data loading, segmentation, filtering, and covariance computation ├── models │   ├── init.py │   ├── stiefel.py # StiefelParameter and MixOptimizer definitions │   └── spdnet.py # BasisTransformation, LogEig, and SPDNet definitions ├── utils │   ├── init.py │   └── math_ops.py # Utility functions for SPD and manifold operations ├── train.py # Main training and evaluation script └── requirements.txt # Project dependencies
+Below is the directory tree structure for the project:
+
+
+BTLSM/
+├── data
+│   ├── __init__.py
+│   ├── dataset.py
+│   └── preprocessing.py
+├── models
+│   ├── __init__.py
+│   ├── stiefel.py
+│   └── spdnet.py
+├── utils
+│   ├── __init__.py
+│   └── math_ops.py
+├── train.py
+└── requirements.txt
