@@ -22,17 +22,21 @@ A deep learning framework for EEG classification that leverages manifold-aware t
 Below is the directory tree structure for the project:
 
 
-BTLSM/
-├── data
-│   ├── __init__.py
-│   ├── dataset.py
-│   └── preprocessing.py
-├── models
-│   ├── __init__.py
-│   ├── stiefel.py
-│   └── spdnet.py
-├── utils
-│   ├── __init__.py
-│   └── math_ops.py
-├── train.py
-└── requirements.txt
+flowchart TD
+    A[eeg_spdnet_project] --> B[data]
+    A --> C[models]
+    A --> D[utils]
+    A --> E[train.py]
+    A --> F[requirements.txt]
+
+    B --> B1[__init__.py]
+    B --> B2[dataset.py]
+    B --> B3[preprocessing.py]
+
+    C --> C1[__init__.py]
+    C --> C2[stiefel.py]
+    C --> C3[spdnet.py]
+
+    D --> D1[__init__.py]
+    D --> D2[math_ops.py]
+
