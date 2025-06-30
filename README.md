@@ -9,7 +9,7 @@ A deep learning framework for EEG classification that leverages manifold-aware t
   - **Log-Euclidean Mapping:** Projects SPD matrices onto their tangent space at the identity.
   - **MixOptimizer:** A custom optimizer that reprojects updates to the Stiefel manifold after each gradient step.
 
-- **EEG Data Preprocessing**
+- **EEG Data Pre-Processing**
   - Data loading, segmentation, band-pass filtering, and mean removal.
   - Covariance matrix computation with regularization to ensure SPD properties.
 
